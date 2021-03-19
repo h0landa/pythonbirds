@@ -22,3 +22,4 @@ if __name__ == '__main__':
     print(ananda.idade)
     print(arthur.__dict__)
     print(ananda.__dict__)
+    print('xx')
