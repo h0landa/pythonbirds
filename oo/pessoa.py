@@ -6,7 +6,7 @@ class Pessoa:
 
 
     def comprimentar(self):
-        return f'Olá'
+        return 'Olá'
 
 if __name__ == '__main__':
 
@@ -14,8 +14,11 @@ if __name__ == '__main__':
     ananda = Pessoa(arthur,nome = 'Ananda')
     print(ananda.comprimentar())
     print(ananda.nome)
-    ananda.idade = 18
+    ananda.sobrenome = 'maria'
+    arthur.sobrenome = 'Holanda'
+    del ananda.filhos
+    arthur.idade = 18
+    ananda.idade = 5
     print(ananda.idade)
-
-    for filho in ananda.filhos:
-        print(filho.nome)
+    print(arthur.__dict__)
+    print(ananda.__dict__)
