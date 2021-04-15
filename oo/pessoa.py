@@ -31,4 +31,4 @@ if __name__ == '__main__':
     print(ananda.__dict__)
     print('xx')
     print(Pessoa.metodo_estatico(),arthur.metodo_estatico())
-    print(Pessoa.metodo_classe(), arthur.metodo_classe())
+    print(Pessoa.metodo_classe(),  arthur.metodo_classe())
