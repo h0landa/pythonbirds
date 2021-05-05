@@ -79,3 +79,27 @@ O   L
   >>> carro.calulcar_direcao()
   >>> 'Norte'
   """
+
+class motor:
+    def __init__(self,nomeCarro,marcaCarro):
+        self.nomeCarro = nomeCarro
+        self.marcaCarro = marcaCarro
+
+    def velocidade(self):
+        return f"A velocidade do carro é de:{c} km"
+
+    def acelerar(self):
+        return c == 0
+        c = c + motor.acelerar
+
+    def frear(self):
+        return motor.velocidade - 2
+
+class direcao:
+
+    def girar_a_esquerda(self):
+        return
+
+    def girar_a_direita(self):
+        return
+
