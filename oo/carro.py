@@ -80,20 +80,16 @@ O   L
   >>> 'Norte'
   """
 
-class motor:
-    def __init__(self,nomeCarro,marcaCarro):
-        self.nomeCarro = nomeCarro
-        self.marcaCarro = marcaCarro
-
-    def velocidade(self):
-        return f"A velocidade do carro é de:{c} km"
+class Motor:
+    def __init__(self):
+        self.velocidade = 0
 
     def acelerar(self):
-        return c == 0
-        c = c + motor.acelerar
+        self.velocidade += 1
 
     def frear(self):
-        return motor.velocidade - 2
+        self.velocidade -= 2
+        self.velocidade = max(0, self.velocidade)
 
 class direcao:
 
