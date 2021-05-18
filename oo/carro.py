@@ -79,6 +79,33 @@ O   L
   >>> carro.calulcar_direcao()
   >>> 'Norte'
   """
+NORTE = 'Norte'
+SUL = 'Sul'
+LESTE = 'Leste'
+OESTE = 'Oeste'
+class Direcao:
+
+    def __init__(self):
+        self.valor = NORTE
+
+    def girar_a_direita(self):
+        if self.valor == NORTE:
+            self.valor = LESTE
+        elif self.valor == LESTE:
+            self.valor = SUL
+        elif self.valor == SUL:
+            self.valor = OESTE
+        elif self.valor == OESTE:
+            self.valor = NORTE
+    def girar_a_esquerda(self):
+        if self.valor == NORTE:
+                self.valor = OESTE
+        if self.valor == OESTE:
+                self.valor = SUL
+        if self.valor == SUL:
+                self.valor = LESTE
+        if self.valor == LESTE:
+                self.valor = NORTE
 
 class Motor:
     def __init__(self):
@@ -91,11 +118,5 @@ class Motor:
         self.velocidade -= 2
         self.velocidade = max(0, self.velocidade)
 
-class Direcao:
 
-    def girar_a_esquerda(self):
-        return
-
-    def girar_a_direita(self):
-        return
 
