@@ -27,10 +27,10 @@ O   L
   1
   >>> motor.acelerar()
   >>> motor.velocidade
-  3
+  2
   >>> motor.frear()
   >>> motor.velocidade
-  1
+  0
   >>> motor.frear()
   >>> motor.velocidade
   0
@@ -91,7 +91,7 @@ class Motor:
         self.velocidade -= 2
         self.velocidade = max(0, self.velocidade)
 
-class direcao:
+class Direcao:
 
     def girar_a_esquerda(self):
         return
