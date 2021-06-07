@@ -14,10 +14,12 @@ class Pessoa:
 
     def comprimentar(self):
         return 'Olá'
+class Homen(Pessoa):
+    pass
 
 if __name__ == '__main__':
 
-    arthur = Pessoa(nome='Arthur')
+    arthur = Homen(nome='Arthur')
     ananda = Pessoa(arthur,nome = 'Ananda')
     print(ananda.comprimentar())
     print(ananda.nome)
@@ -32,3 +34,7 @@ if __name__ == '__main__':
     print('xx')
     print(Pessoa.metodo_estatico(),arthur.metodo_estatico())
     print(Pessoa.metodo_classe(),  arthur.metodo_classe())
+    pessoa = Pessoa('Anonima')
+    print(isinstance(pessoa,Pessoa))
+    print(isinstance(arthur,Homen))
+    print(isinstance(pessoa,Homen))
