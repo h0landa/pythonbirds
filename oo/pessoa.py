@@ -13,13 +13,18 @@ class Pessoa:
 
 
     def comprimentar(self):
-        return 'Olá'
+        return f'Olá, meu nome é {self.nome}'
+class Mutante(Pessoa):
+    olhos = 3
 class Homen(Pessoa):
-    pass
+    def comprimentar(self):
+    comprimentar_da_classeP = Pessoa.comprimentar(self)
+
+        return f'{comprimentar_da_classeP}.Aperto de mão'
 
 if __name__ == '__main__':
 
-    arthur = Homen(nome='Arthur')
+    arthur = Mutante(nome='Arthur')
     ananda = Pessoa(arthur,nome = 'Ananda')
     print(ananda.comprimentar())
     print(ananda.nome)
@@ -38,3 +43,4 @@ if __name__ == '__main__':
     print(isinstance(pessoa,Pessoa))
     print(isinstance(arthur,Homen))
     print(isinstance(pessoa,Homen))
+    print(Pessoa.comprimentar(arthur))
